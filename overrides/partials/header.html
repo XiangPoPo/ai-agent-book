@@ -94,7 +94,12 @@
         </span>
         <span class="lang-select__label" data-lang-label>Language</span>
         <span class="lang-select__chevron" aria-hidden="true">
-          {% include ".icons/material/chevron-down.svg" %}
+          {# Material's chevron-down glyph sits in the lower half of a 24px
+             box, so at header size it reads as a tiny mark in the corner.
+             This caret fills its viewBox and stays centered on the label. #}
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 14" aria-hidden="true">
+            <path d="M1.2 2.1 10 11.4 18.8 2.1 16.1 2.1 10 8.5 3.9 2.1z"/>
+          </svg>
         </span>
       </button>
       <div id="lang-menu"
