@@ -45,6 +45,9 @@
 .lang-select__chevron {
   display: inline-flex;
   flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
 }
 
 .lang-select__icon svg {
@@ -54,8 +57,9 @@
 }
 
 .lang-select__chevron svg {
-  width: 0.68rem;
-  height: 0.68rem;
+  width: 0.95rem;
+  height: 0.66rem;
+  display: block;
   fill: currentcolor;
   transition: transform 0.15s ease;
 }
